@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policies - FairyPrisme</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Inter:wght@400;500&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6366f1;
+            --primary-dark: #4f46e5;
+            --bg: #0f172a;
+            --card-bg: #1e293b;
+            --text: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #818cf8;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem 1rem;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Outfit', sans-serif;
+        }
+
+        .container {
+            max-width: 1000px;
+            width: 100%;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: 600;
+            background: linear-gradient(to right, #818cf8, #c084fc);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+        }
+
+        header p {
+            color: var(--text-muted);
+            font-size: 1.2rem;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--card-bg);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 4rem;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            padding: 2rem;
+            border-radius: 1rem;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            background-color: #243347;
+            border-color: var(--primary);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+        }
+
+        .card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+            color: var(--accent);
+        }
+
+        .card p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .card .btn-text {
+            color: var(--primary);
+            font-weight: 500;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        footer {
+            margin-top: auto;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.875rem;
+            padding: 2rem 0;
+        }
+
+        @media (max-width: 640px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>FairyPrisme</h1>
+            <p>Privacy Policies & Legal Information</p>
+        </header>
+
+        <section>
+            <h2 class="section-title">Applications</h2>
+            <div class="grid">
+                <a href="Privacy-Policy/App/ArcPoint/" class="card">
+                    <div>
+                        <h3>ArcPoint</h3>
+                        <p>Privacy Policy for the ArcPoint novel reading and management application.</p>
+                    </div>
+                    <span class="btn-text">View Policy →</span>
+                </a>
+                <a href="Privacy-Policy/App/ChalkMark/" class="card">
+                    <div>
+                        <h3>ChalkMark</h3>
+                        <p>Privacy Policy for the ChalkMark attendance and schedule tracker.</p>
+                    </div>
+                    <span class="btn-text">View Policy →</span>
+                </a>
+                <a href="Privacy-Policy/App/Golden Tick/" class="card">
+                    <div>
+                        <h3>Golden Tick</h3>
+                        <p>Privacy Policy for the Golden Tick task management app.</p>
+                    </div>
+                    <span class="btn-text">View Policy →</span>
+                </a>
+                <a href="Privacy-Policy/App/Platterlytics/" class="card">
+                    <div>
+                        <h3>Platterlytics</h3>
+                        <p>Privacy Policy for the Platterlytics nutrition and diet tracker.</p>
+                    </div>
+                    <span class="btn-text">View Policy →</span>
+                </a>
+            </div>
+        </section>
+
+        <footer>
+            &copy; 2026 FairyPrisme. All rights reserved.
+        </footer>
+    </div>
+</body>
+
+</html>
