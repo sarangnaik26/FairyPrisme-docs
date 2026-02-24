@@ -69,6 +69,19 @@
             font-size: 1.2rem;
         }
 
+        .category-title {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            padding-bottom: 0.5rem;
+            color: var(--text);
+            border-bottom: 3px solid var(--primary);
+            display: inline-block;
+        }
+
+        .category-section {
+            margin-bottom: 1rem;
+        }
+
         .section-title {
             font-size: 1.5rem;
             margin-bottom: 2rem;
@@ -77,6 +90,7 @@
             display: flex;
             align-items: center;
             gap: 0.75rem;
+            color: var(--text-muted);
         }
 
         .grid {
@@ -150,58 +164,79 @@
             <p>Privacy Policies & Legal Information</p>
         </header>
 
-        <section>
-            <h2 class="section-title">Privacy Policies</h2>
-            <div class="grid">
-                <a href="Privacy-Policy/App/ArcPoint/" class="card">
-                    <div>
-                        <h3>ArcPoint</h3>
-                        <p>Privacy Policy for the ArcPoint novel reading and management application.</p>
-                    </div>
-                    <span class="btn-text">View Policy →</span>
-                </a>
-                <a href="Privacy-Policy/App/ChalkMark/" class="card">
-                    <div>
-                        <h3>ChalkMark</h3>
-                        <p>Privacy Policy for the ChalkMark attendance and schedule tracker.</p>
-                    </div>
-                    <span class="btn-text">View Policy →</span>
-                </a>
-                <a href="Privacy-Policy/App/SelfAsk/" class="card">
-                    <div>
-                        <h3>SelfAsk</h3>
-                        <p>Privacy Policy for the SelfAsk journaling and self-reflection application.</p>
-                    </div>
-                    <span class="btn-text">View Policy →</span>
-                </a>
-                <a href="Privacy-Policy/App/Golden Tick/" class="card">
-                    <div>
-                        <h3>Golden Tick</h3>
-                        <p>Privacy Policy for the Golden Tick task management app.</p>
-                    </div>
-                    <span class="btn-text">View Policy →</span>
-                </a>
-                <a href="Privacy-Policy/App/Platterlytics/" class="card">
-                    <div>
-                        <h3>Platterlytics</h3>
-                        <p>Privacy Policy for the Platterlytics nutrition and diet tracker.</p>
-                    </div>
-                    <span class="btn-text">View Policy →</span>
-                </a>
-            </div>
+        <section class="category-section">
+            <h2 class="category-title">Apps</h2>
+
+            <section>
+                <h3 class="section-title">Privacy Policies</h3>
+                <div class="grid">
+                    <a href="Privacy-Policy/App/ArcPoint/" class="card">
+                        <div>
+                            <h3>ArcPoint</h3>
+                            <p>Privacy Policy for the ArcPoint novel reading and management application.</p>
+                        </div>
+                        <span class="btn-text">View Policy →</span>
+                    </a>
+                    <a href="Privacy-Policy/App/ChalkMark/" class="card">
+                        <div>
+                            <h3>ChalkMark</h3>
+                            <p>Privacy Policy for the ChalkMark attendance and schedule tracker.</p>
+                        </div>
+                        <span class="btn-text">View Policy →</span>
+                    </a>
+                    <a href="Privacy-Policy/App/SelfAsk/" class="card">
+                        <div>
+                            <h3>SelfAsk</h3>
+                            <p>Privacy Policy for the SelfAsk journaling and self-reflection application.</p>
+                        </div>
+                        <span class="btn-text">View Policy →</span>
+                    </a>
+                    <a href="Privacy-Policy/App/Golden Tick/" class="card">
+                        <div>
+                            <h3>Golden Tick</h3>
+                            <p>Privacy Policy for the Golden Tick task management app.</p>
+                        </div>
+                        <span class="btn-text">View Policy →</span>
+                    </a>
+                    <a href="Privacy-Policy/App/Platterlytics/" class="card">
+                        <div>
+                            <h3>Platterlytics</h3>
+                            <p>Privacy Policy for the Platterlytics nutrition and diet tracker.</p>
+                        </div>
+                        <span class="btn-text">View Policy →</span>
+                    </a>
+                </div>
+            </section>
+
+            <section>
+                <h3 class="section-title">How To Use Guides</h3>
+                <div class="grid">
+                    <a href="How-To-Use/App/Platterlytics/" class="card">
+                        <div>
+                            <h3>Platterlytics</h3>
+                            <p>Complete guide on how to setup and use the Platterlytics billing application.</p>
+                        </div>
+                        <span class="btn-text">View Guide →</span>
+                    </a>
+                </div>
+            </section>
         </section>
 
-        <section>
-            <h2 class="section-title">How To Use Guides</h2>
-            <div class="grid">
-                <a href="How-To-Use/App/Platterlytics/" class="card">
-                    <div>
-                        <h3>Platterlytics</h3>
-                        <p>Complete guide on how to setup and use the Platterlytics billing application.</p>
-                    </div>
-                    <span class="btn-text">View Guide →</span>
-                </a>
-            </div>
+        <section class="category-section">
+            <h2 class="category-title">Games</h2>
+
+            <section>
+                <h3 class="section-title">Privacy Policies</h3>
+                <div class="grid">
+                    <a href="Privacy-Policy/Game/Clear Ahead/" class="card">
+                        <div>
+                            <h3>Clear Ahead</h3>
+                            <p>Privacy Policy for the Clear Ahead game.</p>
+                        </div>
+                        <span class="btn-text">View Policy →</span>
+                    </a>
+                </div>
+            </section>
         </section>
 
         <footer>
