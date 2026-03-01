@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Use ChalkMark</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6366f1;
+            --primary-dark: #4f46e5;
+            --bg-gradient: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            --card-bg: rgba(255, 255, 255, 0.8);
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --accent: #10b981;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Outfit', sans-serif;
+        }
+
+        body {
+            background: var(--bg-gradient);
+            min-height: 100vh;
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+            animation: fadeInDown 0.8s ease-out;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(to right, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+
+        .tagline {
+            color: var(--text-muted);
+            font-size: 1.2rem;
+        }
+
+        .section {
+            background: var(--card-bg);
+            backdrop-filter: blur(10px);
+            border-radius: 24px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        .section:hover {
+            transform: translateY(-5px);
+        }
+
+        .section-icon {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: var(--primary-dark);
+            margin-bottom: 20px;
+            display: flex;
+            alignment: center;
+            gap: 12px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #475569;
+        }
+
+        .step-list {
+            list-style: none;
+        }
+
+        .step-item {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 15px;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 12px;
+            border-left: 4px solid var(--primary);
+        }
+
+        .step-number {
+            font-weight: 700;
+            color: var(--primary);
+            font-size: 1.2rem;
+            min-width: 25px;
+        }
+
+        .tip {
+            background: rgba(16, 185, 129, 0.1);
+            border: 1px solid rgba(16, 185, 129, 0.2);
+            padding: 15px;
+            border-radius: 12px;
+            margin-top: 20px;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .tip-icon {
+            color: var(--accent);
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .section {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>ChalkMark</h1>
+            <p class="tagline">Master your attendance with ease.</p>
+        </header>
+
+        <div class="section">
+            <span class="section-icon">🚀</span>
+            <h2>Getting Started</h2>
+            <p>Before you can track your progress, ChalkMark needs to know your schedule and term dates.</p>
+            <div class="step-list">
+                <div class="step-item">
+                    <span class="step-number">1</span>
+                    <div>
+                        <strong>Set Academic Term:</strong> Go to Settings and set your semester's start and end dates.
+                    </div>
+                </div>
+                <div class="step-item">
+                    <span class="step-number">2</span>
+                    <div>
+                        <strong>Setup Timetable:</strong> Head to the Timetable tab and add your subjects. Make sure to
+                        mark holidays!
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <span class="section-icon">📅</span>
+            <h2>Tracking Attendance</h2>
+            <p>Once setup is complete, you'll see your attendance cards on the home screen.</p>
+            <div class="step-list">
+                <div class="step-item">
+                    <span class="step-number">✔</span>
+                    <div>
+                        <strong>Marking:</strong> Simply tap "Present", "Absent", or "Canceled" when prompted or in the
+                        daily view.
+                    </div>
+                </div>
+                <div class="step-item">
+                    <span class="step-number">📊</span>
+                    <div>
+                        <strong>Analytics:</strong> Tap the "Overall Attendance" card to see your history, set goals,
+                        and see how much you can afford to skip.
+                    </div>
+                </div>
+            </div>
+            <div class="tip">
+                <span class="tip-icon">💡</span>
+                <span>Pro tip: Use "Canceled" for when the college cancels a class. It won't hurt your
+                    percentage!</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <span class="section-icon">🔮</span>
+            <h2>Using the Simulator</h2>
+            <p>The Simulator is your crystal ball. It helps you see the future of your attendance.</p>
+            <div class="step-list">
+                <div class="step-item">
+                    <span class="step-number">1</span>
+                    <div>
+                        <strong>Open Simulator:</strong> Look for the "Simulator" button in your attendance detail
+                        views.
+                    </div>
+                </div>
+                <div class="step-item">
+                    <span class="step-number">2</span>
+                    <div>
+                        <strong>Mark Future Days:</strong> Tap dates on the calendar to see how attending or skipping
+                        them affects your final percentage.
+                    </div>
+                </div>
+                <div class="step-item">
+                    <span class="step-number">3</span>
+                    <div>
+                        <strong>Term Projection:</strong> Turn this ON to automatically assume you'll attend all
+                        remaining classes in the semester.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>ChalkMark — Built for students, by students.</p>
+            <p>&copy; 2026 ChalkMark Team</p>
+        </footer>
+    </div>
+</body>
+
+</html>
